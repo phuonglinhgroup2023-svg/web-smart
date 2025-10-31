@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark light;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+}
+
+a {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+button, [role="button"] {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black;
+}
+
+.section-padding {
+  @apply px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-40;
+}
+
+.section-title {
+  @apply text-3xl md:text-5xl font-semibold tracking-tight;
+}
+
+.section-subtitle {
+  @apply text-base md:text-lg text-gray-200 max-w-2xl;
+}
+
+.card-surface {
+  @apply rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-elevate;
+}
